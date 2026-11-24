@@ -1,0 +1,30 @@
+@font-face{font-family:Cairo;src:url('/static/fonts/Cairo.ttf') format('truetype');font-style:normal;font-weight:200 1000;font-display:swap}
+body{font-family:Cairo,Tahoma,Arial,sans-serif}
+.creator-bar{max-width:1260px;margin:auto;padding:8px 36px;display:flex;align-items:center;gap:12px;color:var(--muted);font-size:13px;border-bottom:1px solid var(--line)}
+.creator-bar b{color:var(--text)}
+.creator-bar a{display:inline-grid;place-items:center;color:var(--muted);width:26px;height:26px;border-radius:6px}
+.creator-bar a:hover{color:var(--accent);background:var(--panel)}
+.creator-bar svg{width:17px;height:17px;fill:currentColor}
+.creator-bar .dz-flag{display:inline-grid;place-items:center;width:26px;height:26px}
+.creator-bar .dz-flag svg{width:20px;height:14px;fill:none;border-radius:2px}
+.file-action{display:inline-grid;place-items:center;width:42px;height:42px;padding:0;background:transparent;border:1px solid var(--line)}
+.file-action svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.file-action:hover{color:var(--accent)}
+.header-actions{display:flex;align-items:center;gap:12px}
+#settings-toggle,#settings-close{background:transparent;border:1px solid var(--line);color:var(--text)}
+#settings-close{padding:0;width:33px;height:33px;font-size:23px;line-height:1}
+.preferences{margin-top:20px;max-width:640px}
+.preferences label:not(:first-child){margin-top:18px}
+.folder-row{display:flex;gap:8px}
+.folder-row input{flex:1;min-width:0}
+.folder-row button{white-space:nowrap}
+body[data-theme=light]{color-scheme:light;--bg:#f4f7fb;--panel:#fff;--line:#d5dfeb;--muted:#566579;--text:#142033;--accent:#496c14;--ink:#fff}
+body[data-theme=light] .mark,body[data-theme=light] .primary,body[data-theme=light] .save{background:#365b0d;color:#fff}
+body[data-theme=light] .tag,body[data-theme=light] .video{background:#eaf0f6}
+body[data-theme=light] .format:has(input:checked){background:#e8f3d4;border-color:#496c14}
+body[data-theme=light] input[type=url],body[data-theme=light] input:not([type]),body[data-theme=light] select,body[data-theme=light] .job{background:#f7f9fc;color:var(--text);border-color:#bdcadb}
+body[data-theme=light] input::placeholder{color:#64748b}
+body[data-theme=light] button:not(.primary):not(.save):not(.delete):not(#settings-toggle):not(#settings-close){background:#e3eaf3;color:var(--text)}
+body[data-theme=light] .job-stage.error,body[data-theme=light] .message{color:#9c2323}
+@media(max-width:850px){.creator-bar{padding-left:20px;padding-right:20px}}
+@media(max-width:450px){.creator-bar{font-size:12px}.header-actions{gap:6px}.folder-row{flex-direction:column}}

@@ -4,7 +4,7 @@
 
 ## تثبيت التطبيق
 
-حمّل وشغّل [Loqta-Setup-1.0.0.exe](release/Loqta-Setup-1.0.0.exe). يضم المثبّت Python وyt-dlp وFFmpeg وFFprobe وNode.js؛ المستخدم لا يثبتها منفصلة. يحتاج البرنامج Windows 64-bit واتصالاً بالإنترنت. قد تحتاج إلى Microsoft Edge WebView2 Runtime إذا لم يكن موجوداً في النظام.
+حمّل وشغّل [Loqta-Setup-1.0.0.exe](https://github.com/bouhendnidhal/loqta_youtube_download/releases/download/version_1.0.0/Loqta-Setup-1.0.0.exe). يضم المثبّت Python وyt-dlp وFFmpeg وFFprobe وNode.js؛ المستخدم لا يثبتها منفصلة. يحتاج البرنامج Windows 64-bit واتصالاً بالإنترنت. قد تحتاج إلى Microsoft Edge WebView2 Runtime إذا لم يكن موجوداً في النظام.
 
 للمزيد عن خطوات التثبيت وإعادة البناء، اقرأ [DESKTOP.md](DESKTOP.md). يشرح [PROJECT_GUIDE_AR.md](PROJECT_GUIDE_AR.md) لغات المشروع ومكوّناته.
 
